@@ -4,9 +4,10 @@ import Home from "./home";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Loading from "../loading";
+import Link from "next/link";
 import '../../../public/style.css'
 
-export default function PageClient({ initialPage, initialLimit, initialData }) {
+export default function Health({ initialPage, initialLimit, initialData }) {
   const router = useRouter();
   const [page, setPage] = useState(initialPage);
   const [limit, setLimit] = useState(initialLimit);
@@ -19,8 +20,9 @@ export default function PageClient({ initialPage, initialLimit, initialData }) {
       try {
         const res = await axios.get(`/api/news?page=${page}&limit=${limit}`);
         const data = res.data;
+        const filteredData = data.filter(item => item.category == "Health");
         const offset = (page - 1) * limit;
-        const paginatedData = data.slice(offset, offset + limit);
+        const paginatedData = filteredData.slice(offset, offset + limit);
         setData(paginatedData);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -32,11 +34,11 @@ export default function PageClient({ initialPage, initialLimit, initialData }) {
     if (page !== initialPage || limit !== initialLimit || !initialData.length) {
       getData();
     }
-  }, [page, limit, initialPage, initialLimit, initialData]);
+  }, [page, limit]);
 
   const handleNavigation = (newPage) => {
     setPage(newPage);
-    router.push(`/news?page=${newPage}&limit=${limit}`, undefined, { shallow: true });
+    router.push(`/category/health?page=${newPage}&limit=${limit}`, undefined, { shallow: true });
   };
 
   if (loading) {

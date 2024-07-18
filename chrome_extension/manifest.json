@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "shamar-news extension",
+    "description": "Extension",
+    "version": "1.0",
+    "content_scripts": [
+      {
+        "js": ["scripts/content.js"],
+        "css":["scripts/content.css"],
+        "matches": ["https://next-news-app-peach.vercel.app/*",
+                   "https://shamar-news-git-main-shamars-projects.vercel.app/*"
+                   ]
+      }
+    ]
+  }
+  
