@@ -8,12 +8,11 @@
 }
 
 body {
-  /* font-family: 'Roboto', sans-serif; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: whitesmoke !important;
-  /* background-color: #f0f0f0; */
+
 }
 
 .main-content {
