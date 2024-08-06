@@ -1,7 +1,8 @@
-import "./globals.css";
-import Navbar from "./_components/navbar";
-import Footer from "./_components/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./globals.css";
+import Footer from "./_components/footer";
+import NavbarWrapper from "./_components/navbarWrapper";
+import Navbar from "./_components/navbar";
 
 
 export const metadata = {
@@ -10,10 +11,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
       <body>
-        <Navbar />
+          <NavbarWrapper />
+          {/* <Navbar/> */}
         <div className="main-content">
           {children}
         </div>

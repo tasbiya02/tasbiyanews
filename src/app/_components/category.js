@@ -12,7 +12,7 @@ export default function Category() {
     const path = window.location.pathname;
     setActiveLink(path);
 
-    // Check if the filters container has overflow
+    
     const handleResize = () => {
       if (scrollRef.current) {
         const { scrollWidth, clientWidth } = scrollRef.current;
@@ -26,26 +26,24 @@ export default function Category() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
-
-  // const scroll = (direction) => {
-  //   if (scrollRef.current) {
-  //     const scrollAmount = direction === 'left' ? -200 : 200;
-  //     scrollRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  //   }
-  // };
-
+  }); 
+  
   const handleClick = (path) => {
     setActiveLink(path);
   };
-
+  
   return (
     <div className="filters-wrapper">
       <div className="filters" ref={scrollRef}>
-      {/* {showArrows && <button className="arrow-btn left" onClick={() => scroll('left')}>&lt;</button>} */}
         <div className={`ind-filter ${activeLink === '/news' ? 'active' : ''}`}>
           <Link className='category-text' href="/news" onClick={() => handleClick('/news')}>
            <span> All</span>
+          </Link>
+        </div>
+
+        <div className={`ind-filter ${activeLink === '/category/trending' ? 'active' : ''}`}>
+          <Link className='category-text' href="/category/trending" onClick={() => handleClick('/category/trending')}>
+            <span>Trending</span>
           </Link>
         </div>
 
@@ -96,10 +94,14 @@ export default function Category() {
             <span> Politics</span>
           </Link>
         </div>
-       
-        
-      {/* {showArrows && <button className="arrow-btn right" onClick={() => scroll('right')}>&gt;</button>} */}
+
+        <div className={`ind-filter ${activeLink === '/category/science&enviroment' ? 'active' : ''}`}>
+          <Link className='category-text' href="/category/science&enviroment" onClick={() => handleClick('/category/science&enviroment')}>
+            <span>Science/Enviroment</span>
+          </Link>
+        </div>
       </div>
+      
     </div>
   );
 }

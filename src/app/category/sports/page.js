@@ -1,12 +1,12 @@
-import Sports from "@/app/_components/sports";
+import CategoryPage from "@/app/_components/CategoryPage";
 
-export default function SportsPage({ searchParams }) {
+export default function TrendingPage({ searchParams }) {
   const initialPage = parseInt(searchParams.page) || 1;
   const initialLimit = parseInt(searchParams.limit) || 10;
   
   return (
     <>
-    <Sports initialPage={initialPage} initialLimit={initialLimit} initialData={[]} />
+    <CategoryPage category={"Sports"} initialPage={initialPage} initialLimit={initialLimit}/>
     </>
   )
 }

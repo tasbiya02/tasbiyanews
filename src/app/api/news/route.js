@@ -1,12 +1,9 @@
 import axios from "axios";
 
+export const dynamic = 'force-dynamic';
 export const GET = async (req, res) => {
-  const { searchParams } = new URL(req.url, `http://${req.headers.host}`);
-  const page = searchParams.get('page') || 1;
-  const limit = searchParams.get('limit') || 3;
-
   try {
-    const response = await axios.get(`http://newsinsummary-env.eba-t6yjac2w.ap-south-1.elasticbeanstalk.com/news?page=${page}&limit=${limit}`);
+    const response = await axios.get(process.env.BACKEND_API);
     const data = response.data;
 
     return new Response(JSON.stringify(data), {

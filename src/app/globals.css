@@ -8,26 +8,19 @@
 }
 
 body {
+  /* font-family: 'Roboto', sans-serif; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background-color: whitesmoke !important;
-
+  /* background-color: #f0f0f0; */
 }
 
 .main-content {
   flex: 1;
 }
 
-.navbar {
-  position: sticky !important;
-  top: 0;
-  height: 5.2rem;
-  padding: 10px 20px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.219);
-  background-color: rgb(255,255,255) !important;
-  z-index: 1000;
-}
+
 
 @keyframes spin {
   0% {
@@ -76,7 +69,7 @@ body {
 /* Hero Section CSS */
 .hero-section {
   position: relative;
-  background: linear-gradient(135deg, #f9ecec, #ffcccc, #ff9999, #ff6666, #ff3333);
+  background: linear-gradient(135deg, #f9ecec, #ffcccc, #ff9999, #ff8888, #ff7777);
   padding: 80px 40px;
   color: #555;
 }
@@ -143,8 +136,6 @@ ul li{
   font-size: 1.1rem;
 }
 
-
-
 @media (max-width: 1050px) {
   .profile-image-hero {
     width: 11rem;
@@ -210,5 +201,15 @@ ul li{
   }
   100% {
       transform: translateX(-10px) ;
+  }
+}
+
+@media (max-width: 550px){
+   .list-home li{
+    font-size: 15px !important;
+    color: black;
+  }
+  .paragraph-home{
+    font-size: 18px !important;
   }
 }
