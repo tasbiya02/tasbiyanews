@@ -37,7 +37,7 @@ export default function Home() {
           <li><strong>Share Button:</strong>  Each news article includes a share button, enabling users to easily share content across social media platforms.</li>
           <li><strong>Category Section:</strong>  Implemented a dynamic category section allowing users to browse news articles by specific categories.</li>
           <li><strong>Search Functionality:</strong>  Integrated a robust search feature enabling users to find news on specific topics or keywords.</li>
-          <li style={{textDecoration:"underline"}}><strong>Upcoming Enhancements for shamar news:</strong></li>          
+          <li style={{textDecoration:"underline"}}><strong>Upcoming Enhancements for tasbiya news:</strong></li>          
           <ul>
           <li>Voice Command Navigation:Plan to implement voice command features enabling users to navigate the website with commands such as "next page," "previous page," "refresh," "scroll down," and "scroll up," enhancing accessibility and interactivity.</li>          
           <li>Infinite Scroll:Integrate an infinite scroll feature to provide a seamless user experience by automatically loading more content as users reach the end of the page.</li>          
