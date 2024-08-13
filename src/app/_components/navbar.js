@@ -36,7 +36,7 @@ function Navbar() {
 
 
   return (
-    <nav className="navbar" style={{ backgroundColor: "#ECEBEB" }}>
+    <nav className="navbar" >
       <div className="navbar-content container-fluid p-0">
           <div className="navbar-item ">
             <Link className="nav-logo" href="/news">

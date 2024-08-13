@@ -3,6 +3,7 @@ import "./globals.css";
 import Footer from "./_components/footer";
 import NavbarWrapper from "./_components/navbarWrapper";
 import Navbar from "./_components/navbar";
+import FooterWrapper from "./_components/footerWrapper";
 
 
 export const metadata = {
@@ -16,11 +17,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
           <NavbarWrapper />
-          {/* <Navbar/> */}
         <div className="main-content">
           {children}
         </div>
-        <Footer />
+        <FooterWrapper/>
       </body>
     </html>
   );
