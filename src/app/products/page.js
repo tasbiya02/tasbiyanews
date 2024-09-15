@@ -21,7 +21,7 @@ export default function Products() {
   useEffect(() => {
     async function fetchData() {
       try {
-        let res = await axios.get(/api/news);
+        let res = await axios.get('/api/news');
         res = res.data;
         setData(res);
         setLoading(false);
