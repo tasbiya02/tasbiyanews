@@ -5,6 +5,7 @@ import NavbarWrapper from "./_components/navbarWrapper";
 import Navbar from "./_components/navbar";
 import FooterWrapper from "./_components/footerWrapper";
 import ScrollToTopButton from "./_components/scrollToTopButton";
+import VoiceControl from "./_components/VoiceControll";
 
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
           <NavbarWrapper />
+          <VoiceControl/>
         <div className="main-content">
           <ScrollToTopButton/>
           {children}
