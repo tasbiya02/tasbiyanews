@@ -5,7 +5,7 @@ import NavbarWrapper from "./_components/navbarWrapper";
 import Navbar from "./_components/navbar";
 import FooterWrapper from "./_components/footerWrapper";
 import ScrollToTopButton from "./_components/scrollToTopButton";
-import VoiceControl from "./_components/VoiceControll";
+import VoiceControl from "./_components/VoiceControl";
 
 
 export const metadata = {
