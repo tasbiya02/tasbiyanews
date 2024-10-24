@@ -4,7 +4,7 @@ import Loading from "../loading";
 import '../../../public/style.css'
 import useNewsData from "../hooks/useNewsData";
 import { useEffect, useState } from "react";
-import SecondLoading from "../../../second_loading";
+import SecondLoading from "../second_loading";
 
 
 export default function Search({ initialPage, initialLimit, search }) {
@@ -31,7 +31,7 @@ export default function Search({ initialPage, initialLimit, search }) {
 
           {/* Show skeletons only for new data loading */}
           {loading && filteredData.length > 0 && (
-            <SecondLoading/>
+           <SecondLoading/>
           )}
 
           {/* Show Load More button only if there is more data to load */}

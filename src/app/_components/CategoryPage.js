@@ -4,7 +4,7 @@ import Loading from "../loading";
 import '../../../public/style.css'
 import useNewsData from "../hooks/useNewsData";
 import { useEffect, useState } from "react";
-import SecondLoading from "../../../second_loading";
+import SecondLoading from "../second_loading";
 
 
 export default function CategoryPage({category, initialPage, initialLimit}) {
