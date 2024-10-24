@@ -4,7 +4,8 @@ import Home from "./home";
 import Loading from "../loading";
 import '../../../public/style.css';
 import useNewsData from "../hooks/useNewsData";
-import SecondLoading from '../../../second_loading';
+import SecondLoading from '../second_loading';
+
 
 export default function PageClient({ initialPage, initialLimit }) {
   const { page, filteredData, loading, noMoreData, handleNavigation } = useNewsData(initialPage, initialLimit);
