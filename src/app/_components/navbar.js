@@ -41,7 +41,7 @@ function Navbar() {
           <div className="navbar-item ">
             <Link className="nav-logo" href="/news">
               <i className="fa-brands fa-slack nav-logo-img">
-                <span className="nav-logo-text"> tasbiya news</span>
+                <span className="nav-logo-text"> altamas news</span>
               </i>
             </Link>
           </div>

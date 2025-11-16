@@ -8,18 +8,18 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Hey! I Am Tasbiya</h1>
+          <h1>Hey! I Am Altamas</h1>
           <p>Ambitious Software Developer with excellent frontend and backend development skills.</p>
           <div className="hero-buttons">
-            <Link href="https://drive.google.com/file/d/1UKv_SHElsCCjMCxXuXKNRHnkxZdpEwOw/view?usp=drivesdk">
+            <Link href="https://drive.google.com/file/d/1t4D6U31XtzxJZyCzjM2CtDpluZ8Uh9vC/view">
               Resume
             </Link>
           </div>
           <div className="hero-icons">
-            <Link href="https://github.com/tasbiya02">
+            <Link href="https://github.com/ahmedaltamas2">
               <i className="fab fa-github"></i>
             </Link>
-            <Link href="https://www.linkedin.com/in/tasbiya-21ba2a23a/">
+            <Link href="https://www.linkedin.com/in/altamas-ahmed/">
               <i className="fab fa-linkedin"></i>
             </Link>
           </div>
@@ -37,15 +37,8 @@ export default function Home() {
           <li><strong>Share Button:</strong>  Each news article includes a share button, enabling users to easily share content across social media platforms.</li>
           <li><strong>Category Section:</strong>  Implemented a dynamic category section allowing users to browse news articles by specific categories.</li>
           <li><strong>Search Functionality:</strong>  Integrated a robust search feature enabling users to find news on specific topics or keywords.</li>
-          <li style={{textDecoration:"underline"}}><strong>Upcoming Enhancements for tasbiya news:</strong></li>          
-          <ul>
-          <li>Voice Command Navigation:Plan to implement voice command features enabling users to navigate the website with commands such as "next page," "previous page," "refresh," "scroll down," and "scroll up," enhancing accessibility and interactivity.</li>          
-          <li>Infinite Scroll:Integrate an infinite scroll feature to provide a seamless user experience by automatically loading more content as users reach the end of the page.</li>          
-          </ul>
-          
+          <li><strong>Chatbot:</strong>Implemented voice command features enabling users to navigate the website with commands such as "next page," "previous page," "refresh," "read headlines," "search," "scroll down," and "scroll up," enhancing accessibility and interactivity.</li>
         </ul>
-        
-
         </div>
         <div className="link-container">
           <Link href="/news" className="link-home">
