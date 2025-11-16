@@ -11,7 +11,7 @@ export default function Home() {
           <h1>Hey! I Am Altamas</h1>
           <p>Ambitious Software Developer with excellent frontend and backend development skills.</p>
           <div className="hero-buttons">
-            <Link href="https://drive.google.com/file/d/1t4D6U31XtzxJZyCzjM2CtDpluZ8Uh9vC/view">
+            <Link href="https://drive.google.com/file/d/1nHLhtvRE28u6bRBHBpvrCmb6kiGTHRsG/view?usp=sharing">
               Resume
             </Link>
           </div>
